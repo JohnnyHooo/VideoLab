@@ -20,6 +20,7 @@ public class RenderLayer: Animatable {
     public var audioConfiguration: AudioConfiguration = AudioConfiguration()
     
     let source: Source?
+    public var layerSource: Source? { source }
 
     public init(timeRange: CMTimeRange, source: Source? = nil) {
         self.timeRange = timeRange

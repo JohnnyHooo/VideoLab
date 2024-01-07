@@ -9,6 +9,7 @@
 import AVFoundation
 
 public class RenderLayer: Animatable {
+    public let layerId: String = UUID().uuidString
     public var timeRange: CMTimeRange
 
     public var layerLevel: Int = 0

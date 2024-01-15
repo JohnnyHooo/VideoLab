@@ -18,10 +18,16 @@ public protocol Source {
     func texture(at time: CMTime) -> Texture?
     
     func copy() -> Source
+    
+    func canBeVideoSource() -> Bool
 }
 
 extension Source {
     public func texture(at time: CMTime) -> Texture? {
         return nil
+    }
+
+    public func canBeVideoSource() -> Bool {
+        return false
     }
 }

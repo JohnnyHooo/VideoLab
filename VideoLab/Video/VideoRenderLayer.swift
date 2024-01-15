@@ -89,12 +89,17 @@ class VideoRenderLayer {
 
 extension RenderLayer {
     @objc func canBeConvertedToVideoRenderLayer() -> Bool {
+        if source?.canBeVideoSource() == true {
+            return true
+        }
+        
         if source?.tracks(for: .video).first != nil {
             return true
         }
         if source is ImageSource {
             return true
         }
+
         if operations.count > 0 {
             return true
         }

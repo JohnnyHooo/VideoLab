@@ -19,7 +19,7 @@ public class MetalRenderingDevice {
         TextureCache()
     }()
     
-    init() {
+    public init() {
         guard let device = MTLCreateSystemDefaultDevice() else {
             fatalError("Could not create Metal Device")
         }

@@ -10,6 +10,7 @@ import AVFoundation
 
 class LayerCompositor {
     let passthrough = Passthrough()
+    let rotatePassThrough = RotatePassthrough()
     let yuvToRGBConversion = YUVToRGBConversion()
     let blendOperation = BlendOperation()
 
@@ -163,7 +164,24 @@ class LayerCompositor {
                     yuvToRGBConversion.renderTexture(videoTexture)
                 }
             }
-        } else {
+        }
+        else if pixelFormatType == kCVPixelFormatType_32BGRA {
+            let fullDataTexture = Texture.makeTexture(pixelBuffer: pixelBuffer, pixelFormat: .bgra8Unorm, width:bufferWidth, height: bufferHeight, plane: 0)
+            if let fullDataTexture {
+                let videoTextureSize = CGSize(width: bufferWidth, height: bufferHeight).applying(preferredTransform)
+                let videoTextureWidth = abs(Int(videoTextureSize.width))
+                let videoTextureHeight = abs(Int(videoTextureSize.height))
+                videoTexture = sharedMetalRenderingDevice.textureCache.requestTexture(width: videoTextureWidth, height: videoTextureHeight)
+                if let videoTexture = videoTexture {
+                    videoTexture.lock()
+                    let orientationMatrix = preferredTransform.normalizeOrientationMatrix()
+                    rotatePassThrough.orientation = orientationMatrix
+                    rotatePassThrough.addTexture(fullDataTexture, at: 0)
+                    rotatePassThrough.renderTexture(videoTexture)
+                }
+            }
+        }
+        else {
             videoTexture = Texture.makeTexture(pixelBuffer: pixelBuffer)
         }
         return videoTexture

@@ -28,10 +28,10 @@ open class BasicOperation: Animatable {
     public var enableOutputTextureRead = true
     public var shouldInputSourceTexture = false
     public var timeRange: CMTimeRange?
-    let renderPipelineState: MTLRenderPipelineState
+    public let renderPipelineState: MTLRenderPipelineState
     let operationName: String
-    var inputTextures = [UInt: Texture]()
-    let textureInputSemaphore = DispatchSemaphore(value:1)
+    public var inputTextures = [UInt: Texture]()
+    public let textureInputSemaphore = DispatchSemaphore(value:1)
     
     public init(vertexFunctionName: String? = nil, fragmentFunctionName: String, numberOfInputs: UInt = 1, operationName: String = #file) {
         self.maximumInputs = numberOfInputs
@@ -46,11 +46,11 @@ open class BasicOperation: Animatable {
         self.uniformSettings = ShaderUniformSettings(vertexUniforms: vertexUniforms, fragmentUniforms: fragmentUniforms)
     }
     
-    public func addTexture(_ texture: Texture, at index: UInt) {
+    open func addTexture(_ texture: Texture, at index: UInt) {
         inputTextures[index] = texture
     }
     
-    public func renderTexture(_ outputTexture: Texture) {
+    open func renderTexture(_ outputTexture: Texture) {
         let _ = textureInputSemaphore.wait(timeout:DispatchTime.distantFuture)
         defer {
             textureInputSemaphore.signal()
@@ -72,5 +72,5 @@ open class BasicOperation: Animatable {
     
     // MARK: - Animatable
     public var animations: [KeyframeAnimation]?
-    public func updateAnimationValues(at time: CMTime) {}
+    open func updateAnimationValues(at time: CMTime) {}
 }

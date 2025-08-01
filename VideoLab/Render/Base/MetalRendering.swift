@@ -13,7 +13,7 @@ public let standardImageVertices:[Float] = [-1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0
 public let standardTextureCoordinates: [Float] = [0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0]
 
 extension MTLCommandBuffer {
-    func renderQuad(pipelineState:MTLRenderPipelineState,
+    public func renderQuad(pipelineState:MTLRenderPipelineState,
                     uniformSettings:ShaderUniformSettings? = nil,
                     inputTextures:[UInt:Texture],
                     imageVertices:[Float] = standardImageVertices,

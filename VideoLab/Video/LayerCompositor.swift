@@ -86,7 +86,10 @@ class LayerCompositor {
             groupTexture.lock()
             
             // Filter layers that intersect with the composite time. Iterate through intersecting layers to render each layer
-            let intersectingVideoRenderLayers = videoRenderLayerGroup.videoRenderLayers.filter { $0.timeRangeInTimeline.containsTime(request.compositionTime) }
+            let intersectingVideoRenderLayers = videoRenderLayerGroup.videoRenderLayers.filter { 
+                $0.timeRangeInTimeline.containsTime(request.compositionTime)
+                || CMTimeCompare($0.timeRangeInTimeline.end, request.compositionTime) >= 0 // the edge situation.
+            }
             for (index, subVideoRenderLayer) in intersectingVideoRenderLayers.enumerated() {
                 autoreleasepool {
                     // The first output must be disabled for reading, because groupTexture is taken from the texture cache, it may be the previous texture

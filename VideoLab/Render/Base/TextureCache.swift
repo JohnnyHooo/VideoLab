@@ -29,6 +29,7 @@ public class TextureCache {
     }
     
     public func returnToCache(_ texture: Texture) {
+        Texture.clearTexture(texture)
         let hash = hashForTexture(pixelFormat: texture.texture.pixelFormat, width: texture.width, height: texture.height)
         if textureCache[hash] != nil {
             textureCache[hash]?.append(texture)

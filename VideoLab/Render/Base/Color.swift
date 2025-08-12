@@ -35,4 +35,8 @@ public struct Color {
             return MTLClearColorMake(Double(clearColor.red), Double(clearColor.green), Double(clearColor.blue), Double(clearColor.alpha))
         }
     }
+
+    public var mtlColor: MTLClearColor {
+        return MTLClearColorMake(Double(self.red), Double(self.green), Double(self.blue), Double(self.alpha))
+    }
 }

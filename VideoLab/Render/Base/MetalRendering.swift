@@ -19,10 +19,11 @@ extension MTLCommandBuffer {
                     imageVertices:[Float] = standardImageVertices,
                     textureCoordinates:[Float] = standardTextureCoordinates,
                     outputTexture:Texture,
+                    textureClearColor: Color? = nil,
                     enableOutputTextureRead:Bool) {
         let renderPass = MTLRenderPassDescriptor()
         renderPass.colorAttachments[0].texture = outputTexture.texture
-        renderPass.colorAttachments[0].clearColor = Color.mtlClearColor
+        renderPass.colorAttachments[0].clearColor = textureClearColor?.mtlColor ?? Color.mtlClearColor
         renderPass.colorAttachments[0].storeAction = .store
         renderPass.colorAttachments[0].loadAction = enableOutputTextureRead ? .load : .clear
         
@@ -44,10 +45,10 @@ extension MTLCommandBuffer {
         renderEncoder.endEncoding()
     }
     
-    func clearTexture(_ outputTexture: Texture) {
+    func clearTexture(_ outputTexture: Texture, color: Color? = nil) {
         let renderPass = MTLRenderPassDescriptor()
         renderPass.colorAttachments[0].texture = outputTexture.texture
-        renderPass.colorAttachments[0].clearColor = Color.mtlClearColor
+        renderPass.colorAttachments[0].clearColor = color?.mtlColor ?? Color.mtlClearColor
         renderPass.colorAttachments[0].storeAction = .store
         renderPass.colorAttachments[0].loadAction = .clear
         

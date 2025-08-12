@@ -31,6 +31,7 @@ open class BasicOperation: Animatable {
     public let renderPipelineState: MTLRenderPipelineState
     let operationName: String
     public var inputTextures = [UInt: Texture]()
+    public var textureClearColor: Color? = nil
     public let textureInputSemaphore = DispatchSemaphore(value:1)
     
     public init(vertexFunctionName: String? = nil, fragmentFunctionName: String, numberOfInputs: UInt = 1, operationName: String = #file) {
@@ -65,6 +66,7 @@ open class BasicOperation: Animatable {
                                      uniformSettings: uniformSettings,
                                      inputTextures: inputTextures,
                                      outputTexture: outputTexture,
+                                     textureClearColor: textureClearColor,
                                      enableOutputTextureRead: enableOutputTextureRead)
             commandBuffer.commit()
         }

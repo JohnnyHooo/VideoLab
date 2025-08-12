@@ -119,12 +119,11 @@ public class Texture {
         }
     }
     
-    public class func clearTexture(_ texture: Texture) {
+    public class func clearTexture(_ texture: Texture, color: Color? = nil) {
         guard let commandBuffer = sharedMetalRenderingDevice.commandQueue.makeCommandBuffer() else {
             return
         }
-        
-        commandBuffer.clearTexture(texture)
+        commandBuffer.clearTexture(texture, color: color)
         commandBuffer.commit()
     }
     

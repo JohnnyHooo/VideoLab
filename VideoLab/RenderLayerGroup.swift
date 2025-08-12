@@ -9,5 +9,36 @@
 import AVFoundation
 
 public class RenderLayerGroup: RenderLayer {
-    public var layers: [RenderLayer] = []
+    public override var timeRange: CMTimeRange {
+        set {
+            super.timeRange = newValue
+        }
+        get {
+            return super.timeRange
+        }
+    }
+    private(set) var layers: [RenderLayer] = []
+
+    public func addLayers(_ layers: [RenderLayer]) {
+        layers.forEach { layer in
+            self.addLayer(layer)
+        }
+    }
+    public func addLayer(_ layer: RenderLayer) {
+        layers.append(layer)
+        layer.updateSuperLayer(self)
+    }
+
+    public func clearLayers() {
+        layers.forEach({
+            if $0.superLayer === self {
+                $0.updateSuperLayer(nil)
+            }
+        })
+        layers.removeAll()
+    }
+
+    public func updateLayers() {
+        self.layers.forEach({ $0.updateTimeRangeInRoot() })
+    }
 }

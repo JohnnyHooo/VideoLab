@@ -12,7 +12,9 @@ public protocol Source {
     var selectedTimeRange: CMTimeRange { get set }
     var duration: CMTime { get set }
     var isLoaded: Bool { get set }
-    
+
+    var weakContainerLayer: RenderLayer? { get set }
+
     func load(completion: @escaping (NSError?) -> Void)
     func tracks(for type: AVMediaType) -> [AVAssetTrack]
     func texture(at time: CMTime) -> Texture?
@@ -20,9 +22,16 @@ public protocol Source {
     func copy() -> Source
     
     func canBeVideoSource() -> Bool
+
+    func syncTimes(compositionTime: CMTime, instructionTimeRange: CMTimeRange)
 }
 
 extension Source {
+    public weak var weakContainerLayer: RenderLayer? {
+        get { nil }
+        set { }
+    }
+    
     public func texture(at time: CMTime) -> Texture? {
         return nil
     }
@@ -30,4 +39,6 @@ extension Source {
     public func canBeVideoSource() -> Bool {
         return false
     }
+
+    public func syncTimes(compositionTime: CMTime, instructionTimeRange: CMTimeRange) { }
 }

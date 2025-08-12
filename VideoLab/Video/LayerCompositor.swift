@@ -47,7 +47,9 @@ class LayerCompositor {
 
         // Convert composite time to internal layer time
         let layerInternalTime = request.compositionTime - videoRenderLayer.timeRangeInTimeline.start
-        
+
+        videoRenderLayer.renderLayer.syncTimes(compositionTime: request.compositionTime, instructionTimeRange: request.videoCompositionInstruction.timeRange)
+
         // Update keyframe animation values
         videoRenderLayer.renderLayer.updateAnimationValues(at: layerInternalTime)
         

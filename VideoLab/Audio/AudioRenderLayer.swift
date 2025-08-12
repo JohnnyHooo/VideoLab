@@ -11,7 +11,7 @@ import Accelerate
 
 class AudioRenderLayer {
     let renderLayer: RenderLayer
-    var superLayer: AudioRenderLayer?
+    weak var superLayer: AudioRenderLayer?
     var trackID: CMPersistentTrackID = kCMPersistentTrackID_Invalid
     var timeRangeInTimeline: CMTimeRange
     var pitchAlgorithm: AVAudioTimePitchAlgorithm? {

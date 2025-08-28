@@ -15,10 +15,8 @@ public class MetalRenderingDevice {
     public let device: MTLDevice
     public let commandQueue: MTLCommandQueue
     public let shaderLibrary: MTLLibrary
-    public lazy var textureCache: TextureCache = {
-        TextureCache()
-    }()
-    
+    public let textureCache = TextureCache()
+
     public init() {
         guard let device = MTLCreateSystemDefaultDevice() else {
             fatalError("Could not create Metal Device")

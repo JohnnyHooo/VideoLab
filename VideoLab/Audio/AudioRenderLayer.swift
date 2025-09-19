@@ -61,12 +61,12 @@ class AudioRenderLayer {
             unprepare: nil,
             process: tapProcess)
         
-        var tap: Unmanaged<MTAudioProcessingTap>?
+        var tap: MTAudioProcessingTap?
         let status = MTAudioProcessingTapCreate(kCFAllocatorDefault, &callbacks, kMTAudioProcessingTapCreationFlag_PostEffects, &tap)
         if status != noErr {
             print("Failed to create audio processing tap")
         }
-        return tap?.takeRetainedValue()
+        return tap
     }
 
     // MARK: - Private

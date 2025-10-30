@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -24,12 +24,14 @@ let package = Package(
             dependencies: [],
             path: "VideoLab",
             resources: [
-                .copy("VideoLab.bundle")
+                .copy("VideoLab.bundle"),
+                .process("**/*.metal")
             ]
         ),
         .testTarget(
             name: "VideoLabTests",
-            dependencies: ["VideoLab"]
+            dependencies: ["VideoLab"],
+            path: "Tests/VideoLabTests"
         ),
     ]
 )

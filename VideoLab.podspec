@@ -14,12 +14,12 @@ Pod::Spec.new do |s|
   * Support custom effects. Such as lut filter, zoom blur, etc.
                        DESC
 
-  s.homepage         = 'https://github.com/ruanjx/VideoLab'
+  s.homepage         = 'https://github.com/JohnnyHooo/VideoLab'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bear' => 'ruanjingxiong@gmail.com' }
-  s.source           = { :git => 'https://github.com/ruanjx/VideoLab.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/JohnnyHooo/VideoLab.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '14.0'
   s.swift_version = "5"
 
   s.source_files = 'VideoLab/**/*.{swift,h,m,metal}'

@@ -23,7 +23,7 @@ let package = Package(
         .iOS(.v14)
     ],
     dependencies: [
-        .package(url: "https://github.com/JohnnyHooo/VideoLab.git", from: "1.0.0")
+        .package(url: "https://github.com/JohnnyHooo/VideoLab.git", from: "1.0.1")
     ],
     targets: [
         .target(

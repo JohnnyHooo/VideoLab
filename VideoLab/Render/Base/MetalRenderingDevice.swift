@@ -29,12 +29,19 @@ public class MetalRenderingDevice {
         self.commandQueue = queue
 
         do {
-            let frameworkBundle = Bundle(for: MetalRenderingDevice.self)
-            let metalLibraryPath = frameworkBundle.path(forResource: "default", ofType: "metallib")!
-
-            self.shaderLibrary = try device.makeLibrary(filepath:metalLibraryPath)
+            // Try to create library from default sources first (SPM compatible)
+            if let defaultLibrary = device.makeDefaultLibrary() {
+                self.shaderLibrary = defaultLibrary
+            } else {
+                // Fallback to bundle-based loading (CocoaPods compatible)
+                let frameworkBundle = Bundle(for: MetalRenderingDevice.self)
+                guard let metalLibraryPath = frameworkBundle.path(forResource: "default", ofType: "metallib") else {
+                    fatalError("Could not find Metal library in bundle")
+                }
+                self.shaderLibrary = try device.makeLibrary(filepath: metalLibraryPath)
+            }
         } catch {
-            fatalError("Could not load library")
+            fatalError("Could not load Metal library: \(error)")
         }
     }
 }

@@ -73,6 +73,12 @@ class VideoRenderLayer {
     
     // MARK: - Private
     private static let blankVideoAsset: AVAsset? = {
+        // Try SPM bundle access first
+        if let videoURL = Bundle.module.url(forResource: "BlankVideo", withExtension: "mov") {
+            return AVAsset(url: videoURL)
+        }
+        
+        // Fallback to CocoaPods bundle access
         let bundle = Bundle(for: VideoRenderLayer.self)
         guard let bundleURL = bundle.url(forResource: "VideoLab", withExtension: "bundle") else {
             return nil

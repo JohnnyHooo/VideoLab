@@ -17,7 +17,7 @@ public class RenderLayerGroup: RenderLayer {
             return super.timeRange
         }
     }
-    private(set) var layers: [RenderLayer] = []
+    public var layers: [RenderLayer] = []
 
     public func addLayers(_ layers: [RenderLayer]) {
         layers.forEach { layer in

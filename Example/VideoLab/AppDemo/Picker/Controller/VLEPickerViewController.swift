@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import PKHUD
 import VideoLab
 import CoreMedia
 import Photos

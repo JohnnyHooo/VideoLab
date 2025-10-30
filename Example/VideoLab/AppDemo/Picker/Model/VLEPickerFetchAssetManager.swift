@@ -23,6 +23,13 @@ class VLEPickerFetchAssetManager: NSObject {
                 stop.pointee = true
             }
         }
+        
+        // 如果没有找到用户图库，创建一个空的相册模型
+        if model == nil {
+            let emptyResult = PHAsset.fetchAssets(with: option)
+            model = VLEPickerAlbumListModel.init(title: "所有照片", result: emptyResult, collection: nil, option: option, isCameraRoll: true)
+        }
+        
         return model!
     }
 

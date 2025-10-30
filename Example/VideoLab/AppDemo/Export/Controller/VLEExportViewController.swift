@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import Photos
-import PKHUD
 
 class VLEExportViewController: UIViewController {
 

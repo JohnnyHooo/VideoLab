@@ -18,12 +18,12 @@ class VLEPickerAlbumListModel: NSObject {
     let option: PHFetchOptions
     var result: PHFetchResult<PHAsset>
     var models: [VLEPickerAssetModel] = []
-    let collection: PHAssetCollection
+    let collection: PHAssetCollection?
 
     public init(
         title: String,
         result: PHFetchResult<PHAsset>,
-        collection: PHAssetCollection,
+        collection: PHAssetCollection?,
         option: PHFetchOptions,
         isCameraRoll: Bool
     ) {
@@ -40,6 +40,10 @@ class VLEPickerAlbumListModel: NSObject {
     }
 
     func refreshResult() {
-        result = PHAsset.fetchAssets(in: collection, options: option)
+        if let collection = collection {
+            result = PHAsset.fetchAssets(in: collection, options: option)
+        } else {
+            result = PHAsset.fetchAssets(with: option)
+        }
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C107FC9284DF99F00629526 /* VLEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FC8284DF99F00629526 /* VLEMainViewController.swift */; };
 		0C107FCC284DFB7200629526 /* VLEDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */; };
-		0DA84D5143A71C45A1A551E6 /* Pods_VideoLab_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C12D39790091FABBA1E2A77 /* Pods_VideoLab_Tests.framework */; };
 		2E97F3B0246839680071AC60 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A6246839680071AC60 /* LUT_M01.png */; };
 		2E97F3B1246839680071AC60 /* LUT_M02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A7246839680071AC60 /* LUT_M02.png */; };
 		2E97F3B2246839680071AC60 /* LUT_M03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A8246839680071AC60 /* LUT_M03.png */; };
@@ -98,7 +97,9 @@
 		64FEAFCA28BD9EF700F0A055 /* VLEPlaybackControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFC928BD9EF700F0A055 /* VLEPlaybackControlView.swift */; };
 		64FEAFCF28BE01FF00F0A055 /* VLETimeLineScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFCE28BE01FF00F0A055 /* VLETimeLineScaleView.swift */; };
 		64FEAFD328BE073100F0A055 /* VLETimeLineToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFD228BE073100F0A055 /* VLETimeLineToolBarView.swift */; };
-		6C4D41764043BC22E023E4EB /* Pods_VideoLab_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E71C233C6CF0CC7C668D4 /* Pods_VideoLab_Example.framework */; };
+		76679CC7F900A3A302C5EAC1 /* Pods_VideoLab_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97BEE9792C1827DCC81CAD2 /* Pods_VideoLab_Example.framework */; };
+		773E802F7CC262706B495F99 /* Pods_VideoLab_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BECF262B3E4D0BEF292316 /* Pods_VideoLab_Tests.framework */; };
+		F0BCDBA72EB21E8E009AB4D0 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BCDBA62EB21E8E009AB4D0 /* HUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +115,6 @@
 /* Begin PBXFileReference section */
 		0C107FC8284DF99F00629526 /* VLEMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEMainViewController.swift; sourceTree = "<group>"; };
 		0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEDemoViewController.swift; sourceTree = "<group>"; };
-		17730C4D1CE60AFE5DF49FBA /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E97F3A6246839680071AC60 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
 		2E97F3A7246839680071AC60 /* LUT_M02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M02.png; sourceTree = "<group>"; };
 		2E97F3A8246839680071AC60 /* LUT_M03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M03.png; sourceTree = "<group>"; };
@@ -132,9 +132,7 @@
 		2EC4800A2452A39400D1D335 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2EC4800C2452A39400D1D335 /* image3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3.HEIC; sourceTree = "<group>"; };
 		2EC4800D2452A39400D1D335 /* image1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.JPG; sourceTree = "<group>"; };
-		49B85F52A9B716ED3D5F3BCD /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4DCAC2D992EEEFE4BD969690 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5C12D39790091FABBA1E2A77 /* Pods_VideoLab_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* VideoLab_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoLab_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -210,11 +208,15 @@
 		64FEAFC928BD9EF700F0A055 /* VLEPlaybackControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlaybackControlView.swift; sourceTree = "<group>"; };
 		64FEAFCE28BE01FF00F0A055 /* VLETimeLineScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineScaleView.swift; sourceTree = "<group>"; };
 		64FEAFD228BE073100F0A055 /* VLETimeLineToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineToolBarView.swift; sourceTree = "<group>"; };
-		77416D1BC476BAEDB7B8C955 /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7D7C49D12F0278F23194CE27 /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7CD9A4E5B390FC9C86F9CE6D /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.release.xcconfig"; path = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9CBE18127947092323632E40 /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A82565B341B1784212B05E3B /* VideoLab.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VideoLab.podspec; path = ../VideoLab.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A97BEE9792C1827DCC81CAD2 /* Pods_VideoLab_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BECF262B3E4D0BEF292316 /* Pods_VideoLab_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE729ED05199665CA84E701F /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.release.xcconfig"; path = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D77208DE9E2589E94F7B0E30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F18E71C233C6CF0CC7C668D4 /* Pods_VideoLab_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9622EDF60199F436762055B /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.debug.xcconfig"; path = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BCDBA62EB21E8E009AB4D0 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C4D41764043BC22E023E4EB /* Pods_VideoLab_Example.framework in Frameworks */,
+				76679CC7F900A3A302C5EAC1 /* Pods_VideoLab_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA84D5143A71C45A1A551E6 /* Pods_VideoLab_Tests.framework in Frameworks */,
+				773E802F7CC262706B495F99 /* Pods_VideoLab_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +259,20 @@
 				64BBC3762888F5CB00E03DD2 /* Main */,
 				64BBC3752888F56000E03DD2 /* Playback */,
 				64BBC3742888F55700E03DD2 /* Timeline */,
+				F0BCDBA62EB21E8E009AB4D0 /* HUD.swift */,
 			);
 			path = AppDemo;
+			sourceTree = "<group>";
+		};
+		163886610FFCE445881612E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9622EDF60199F436762055B /* Pods-VideoLab_Example.debug.xcconfig */,
+				CE729ED05199665CA84E701F /* Pods-VideoLab_Example.release.xcconfig */,
+				9CBE18127947092323632E40 /* Pods-VideoLab_Tests.debug.xcconfig */,
+				7CD9A4E5B390FC9C86F9CE6D /* Pods-VideoLab_Tests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		2E87DF622412BD210014D9CC /* Resource */ = {
@@ -302,15 +316,13 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		4BE9E6F11E684DEFC6998053 /* Pods */ = {
+		2F7250F3814D0E761C867041 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77416D1BC476BAEDB7B8C955 /* Pods-VideoLab_Example.debug.xcconfig */,
-				7D7C49D12F0278F23194CE27 /* Pods-VideoLab_Example.release.xcconfig */,
-				17730C4D1CE60AFE5DF49FBA /* Pods-VideoLab_Tests.debug.xcconfig */,
-				49B85F52A9B716ED3D5F3BCD /* Pods-VideoLab_Tests.release.xcconfig */,
+				A97BEE9792C1827DCC81CAD2 /* Pods_VideoLab_Example.framework */,
+				B8BECF262B3E4D0BEF292316 /* Pods_VideoLab_Tests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -320,8 +332,8 @@
 				607FACD21AFB9204008FA782 /* Example for VideoLab */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				4BE9E6F11E684DEFC6998053 /* Pods */,
-				6518C543D02EC8A628CA7FA2 /* Frameworks */,
+				163886610FFCE445881612E0 /* Pods */,
+				2F7250F3814D0E761C867041 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -634,15 +646,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		6518C543D02EC8A628CA7FA2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F18E71C233C6CF0CC7C668D4 /* Pods_VideoLab_Example.framework */,
-				5C12D39790091FABBA1E2A77 /* Pods_VideoLab_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -650,11 +653,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VideoLab_Example" */;
 			buildPhases = (
-				99E46E94BE86B80A8D7CCBE7 /* [CP] Check Pods Manifest.lock */,
+				A377B6D92E54A9A363626D20 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				16516E60E28E886D90777190 /* [CP] Embed Pods Frameworks */,
+				F468923F09E24E9DFCB30475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -669,7 +672,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VideoLab_Tests" */;
 			buildPhases = (
-				674D3913EDE1ACF1DFB9DE79 /* [CP] Check Pods Manifest.lock */,
+				586875E221D7630CB576AFE7 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -696,13 +699,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = DDY2KRLXQ4;
+						DevelopmentTeam = B4NGD9HAL3;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = DDY2KRLXQ4;
+						DevelopmentTeam = B4NGD9HAL3;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
@@ -783,31 +786,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16516E60E28E886D90777190 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
-				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/VideoLab/VideoLab.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoLab.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		674D3913EDE1ACF1DFB9DE79 /* [CP] Check Pods Manifest.lock */ = {
+		586875E221D7630CB576AFE7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -829,7 +808,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99E46E94BE86B80A8D7CCBE7 /* [CP] Check Pods Manifest.lock */ = {
+		A377B6D92E54A9A363626D20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -849,6 +828,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F468923F09E24E9DFCB30475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/VideoLab/VideoLab.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoLab.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -873,6 +874,7 @@
 				6497DE4128F2F44100512DFA /* VLEEffectItemModel.swift in Sources */,
 				642A1CAB28D1B71700B1F482 /* VLEPickerAlbumListModel.swift in Sources */,
 				64FEAFCA28BD9EF700F0A055 /* VLEPlaybackControlView.swift in Sources */,
+				F0BCDBA72EB21E8E009AB4D0 /* HUD.swift in Sources */,
 				64FEAFD328BE073100F0A055 /* VLETimeLineToolBarView.swift in Sources */,
 				64BBC37B2889386300E03DD2 /* VLEPlaybackViewController.swift in Sources */,
 				642D7F4E28DBF6540037EA5B /* VLEExportConfigResolutionView.swift in Sources */,
@@ -978,7 +980,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1024,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1034,14 +1036,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77416D1BC476BAEDB7B8C955 /* Pods-VideoLab_Example.debug.xcconfig */;
+			baseConfigurationReference = E9622EDF60199F436762055B /* Pods-VideoLab_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDY2KRLXQ4;
+				DEVELOPMENT_TEAM = B4NGD9HAL3;
 				INFOPLIST_FILE = VideoLab/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				MTL_HEADER_SEARCH_PATHS = "";
@@ -1055,14 +1057,14 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D7C49D12F0278F23194CE27 /* Pods-VideoLab_Example.release.xcconfig */;
+			baseConfigurationReference = CE729ED05199665CA84E701F /* Pods-VideoLab_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDY2KRLXQ4;
+				DEVELOPMENT_TEAM = B4NGD9HAL3;
 				INFOPLIST_FILE = VideoLab/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				MTL_HEADER_SEARCH_PATHS = "";
@@ -1076,12 +1078,12 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17730C4D1CE60AFE5DF49FBA /* Pods-VideoLab_Tests.debug.xcconfig */;
+			baseConfigurationReference = 9CBE18127947092323632E40 /* Pods-VideoLab_Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDY2KRLXQ4;
+				DEVELOPMENT_TEAM = B4NGD9HAL3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1104,12 +1106,12 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49B85F52A9B716ED3D5F3BCD /* Pods-VideoLab_Tests.release.xcconfig */;
+			baseConfigurationReference = 7CD9A4E5B390FC9C86F9CE6D /* Pods-VideoLab_Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDY2KRLXQ4;
+				DEVELOPMENT_TEAM = B4NGD9HAL3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
